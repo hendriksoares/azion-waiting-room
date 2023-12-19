@@ -4,6 +4,8 @@
   "description": "",
   "main": "dist/main.js",
   "scripts": {
+    "start": "vulcan dev",
+    "build": "vulcan build --preset typescript --mode compute --entry main.ts",
     "lint": "eslint \"{src,apps,libs,test}/**/*.ts\" --fix",
     "test:e2e": "jest --config ./jest-e2e.json"
   },
@@ -31,14 +33,11 @@
     "ts-jest": "^29.1.0",
     "tsc": "^2.0.4",
     "tsconfig-paths": "^4.2.0",
+    "edge-functions": "^1.7.0",
     "typescript": "^5.0.4"
   },
   "dependencies": {
-    "axios": "^1.4.0",
-    "date-fns": "^2.30.0",
-    "dotenv": "^16.0.3",
-    "edge-functions": "^1.7.0",
-    "itty-router": "^4.0.23"
+    "date-fns": "^2.30.0"
   },
   "jest": {
     "moduleFileExtensions": [
